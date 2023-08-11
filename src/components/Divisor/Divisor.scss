@@ -1,0 +1,64 @@
+.div1 {
+    margin: 10vh auto;
+    width: 80vw;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-family: 'Libre Baskerville', serif;  
+    box-shadow: 0px 0px 50px 10px gray;
+
+    img {
+        filter: brightness(0.2);
+        display: block;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+
+    .content-container {
+        position: absolute;
+        width: 100%;
+        top: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+            letter-spacing: 2px;
+
+            .title {
+                font-size: 25px;
+            }
+        }
+
+        .button-container {
+            width: 20%;
+            align-self: center;
+            margin: 0;
+
+            .buy-button {
+                cursor: pointer;
+                width: 10vw;
+                height: 7vh;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                font-family: 'Libre Baskerville', serif;  
+
+                &:hover {
+                    background-color: #d01b33;
+                    color: white;
+                    border: 1px solid white;
+                    transition: all 0.1s ease-in-out;
+                }
+
+            }
+        }
+    }
+}

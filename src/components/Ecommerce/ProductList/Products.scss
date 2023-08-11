@@ -1,0 +1,28 @@
+.ecommerce-layout {
+    min-height: 100vh;
+    display: flex;
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        width: 10vw;
+        margin-left: 20px;    
+
+        button {
+            font-family: 'Libre Baskerville', serif;  
+            font-weight: 600;
+            text-align: start;
+            height: 5vh;
+            margin: 0 0 10px;
+            border: none;
+            background-color: transparent;
+            color:  #40877c;
+            cursor: pointer;
+        }
+    }
+
+    .bar {
+        margin: 0;
+        height: 100vh;
+    }
+}

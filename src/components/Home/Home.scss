@@ -1,0 +1,34 @@
+.home-page {
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+    background: rgb(191,191,191);
+    background: linear-gradient(0deg, rgba(191,191,191,1) 0%, rgba(255,255,255,1) 70%);
+
+    .home-image {
+        z-index: -10;
+        display: block;
+        animation: fadeIn 2s forwards;
+        width: 100vw;
+        background-size: cover;
+        overflow: hidden;
+        height: 100%;   
+    }
+
+    .text-page {
+        box-sizing: border-box;
+        position: absolute;
+        top: 30vh;
+        left: 5vw;
+        width: 25vw;
+        
+        
+        
+        .text {
+            color: white;
+            
+            
+            
+        }
+    }
+}

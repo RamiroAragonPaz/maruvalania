@@ -1,0 +1,59 @@
+.DondeEncontrarme-page {
+    min-height: 125vh;
+    display: flex;
+    width: 100vw;
+    position: relative;    
+    z-index: -100;
+    
+    
+    .text-container{
+        height: 110vh;
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+        
+        color: #40877c;
+        font-family: 'Libre Baskerville', serif;  
+        
+        .text-title{
+            text-align: center;
+            font-family: 'Oooh Baby', cursive;
+            font-size: 60px;   
+            letter-spacing: 2px;
+        }
+        
+        .parragraphs {
+            display: flex;
+            width: 100%;
+
+            .icon{
+                height: 5vh;
+                display: block;
+                margin: 15px auto;
+                color: #6fa39b;
+            }
+            
+            .ph {
+                
+                width: 30vw;
+                margin: 0 2.5vw;
+                text-align: justify;
+
+                h3{
+                    min-height: 10vh;
+                }
+
+                .ph-list {
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        p {
+            display: inline-block;
+            line-height: 1.5;
+            line-height: 2;
+            font-size: 17px
+        }
+    }
+}

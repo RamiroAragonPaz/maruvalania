@@ -1,0 +1,18 @@
+{
+    "workflows":[
+       {
+          "name":"Compra",
+          "description":"Gracias por tu compra!",
+          "trigger_name":"Compra",
+          "emails":[
+             {
+                "trigger":"time",
+                "sendDelay":0,
+                "subject":"Gracias por tu compra!",
+                "body":"<div style='text-align:left'><p>Gracias por tu compra!<br/><br/>Acá comienza tu nuevo camino</p></div>",
+                "from":"marianelavalania@gmail.com"
+             }
+            ]
+       }
+    ]
+ }

@@ -1,0 +1,78 @@
+.productList-page {
+    min-height: 150vh;
+    height: 100%;
+    width: 100vw;
+    background-color: #d7e4e0;
+    position: relative;
+    color:  #40877c;
+    font-family: 'Libre Baskerville', serif;  
+    
+    .title-container {
+        width: 70vw;
+        margin: 0 auto;
+        position: relative;
+        padding: 10vh 0 0 0;
+        
+        h2 {
+            font-size: 40px;
+            margin-top: 5vh;
+        }
+        
+    }
+
+    .card-container {
+        width: 90vw;
+        height: 70vh;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card {
+            box-shadow: 1px 1px 5px rgb(88, 88, 88);
+            background-color: white;
+            width: 20vw;
+            height: 80vh;
+            font-family: 'Tahoma';
+            text-align: center;
+
+            .img-container {
+                
+                overflow: hidden;
+                width: 20vw; 
+                height: 50vh;
+            
+                img{
+                    margin: 0 auto 0;
+                    width: 20vw;
+                    
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: all 0.15s ease-in;
+                    }
+                }
+            }
+
+            .buy-button {
+                background-color: red;
+                color: white;
+                max-width: 10vw;
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                text-decoration: none;
+                border: 1px solid red;
+                padding: 10px;
+                font-family: 'Tahoma';
+
+                &:hover {
+                    background-color: #d7e4e0;
+                    border: 1px solid  #40877c;
+                    color: #40877c;
+                    transition: all 0.1s ease-in-out;
+                }
+                
+            }
+        }
+    }
+}

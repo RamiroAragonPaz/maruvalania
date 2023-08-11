@@ -1,0 +1,44 @@
+$primary-color: #d01b33;
+$secondary-color: #a4b953;
+
+@import 'animate.css';
+@import 'loaders.css/src/animations/cube-transition.scss';
+
+@font-face {
+    font-family: 'Pacifico';
+    src: ('./assets/fonts/Pacifico.ttf') format('ttf');
+  }
+@font-face {
+    font-family: 'AkzidenzGrotesk-BoldExtendedItalic';
+    src: ('./assets/fonts/AkzidenzGrotesk-BoldExtendedItalic.otf') format('otf');
+  }
+@font-face {
+    font-family: 'AkzidenzGrotesk-Bold';
+    src: ('./assets/fonts/AkzidenzGrotesk-Bold.otf') format('otf');
+  }
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Heebo', sans-serif;
+}
+
+ 
+
+
+.loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+    color: var($primary-color);
+}
+
+

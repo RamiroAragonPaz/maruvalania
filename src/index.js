@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Loader from 'react-loaders';
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
+<Suspense fallback={ <Loader type='cube-transition' />}>
     <App />
-  </React.StrictMode>
+</Suspense>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
