@@ -1,124 +1,152 @@
-
-
 .testimonios-page {
-    height: 120vh;
+    min-height: 100%;
     position: relative;
-    overflow: hidden;
     
-   .background {
-        box-shadow: 0px 0px 10px rgba(14, 14, 14, 0.848);
-        filter: brightness(0.4);
-        width: 100vw;    
-        display: block;
-
-    }
-
-    .text-container {
-        position: absolute;
-        top: 10vh;
-        left: 10vw;
-        width: 40vw;
-        margin: auto;
-        color: white;
-        font-family: 'Oooh Baby', cursive;
-
-        .title {
-            text-align: center;
-            font-size: 50px;
-        }
-
-        p{
-            font-family: 'Libre Baskerville', serif;     
-            margin: 0 50px 0;    
-            display: inline-block;
-            line-height: 2;
-            font-size: 18px;
-
-
+    .background-container{
+        .background {
+            height: auto;
+            box-shadow: 0px 0px 10px rgba(14, 14, 14, 0.848);
+            filter: brightness(0.4);
+            width: 100%;    
+            display: block;
         }
     }
 
-    .swiper-container{        
-        width: 40vw;
-        height: 40vh;
-        background:  transparent;
+    .elements-container{
         position: absolute;
-        left: 10vw;
-        bottom: 25vh;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;    
+        align-items: stretch;
 
-        .swiper-place {
-            width: 40vw;
-            height: 40vh;
-            background:  transparent;
-            border-color: 1px solid white;    
-            
-            .swiper-pagination-bullet-active-main {
-                background: white;
-                width: 1vw;
-                height: 2vh;
-            }
-
-            .swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-prev{
-                background-color: rgb(224, 224, 224);
-                width: 1vw;
-                height: 2vh;
-            }
-
-            .swiper-slide {    
-                font-family: 'Libre Baskerville', serif;  
-                font-size: 20px;
-                letter-spacing: 2px;
-                border: 1px solid white;
-                background-color: transparent;
-                width: 40vw;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: white;
-
-                
-
-                .title{
-                    font-size: 22px;
-                    font-weight: 600;
-                    margin-top: 5px ;
-                }
-
-
-                .testimony-container {
-                    font-family: 'Libre Baskerville', serif;
-                    letter-spacing: 1;
-                    text-align: center;
-                    width: 70%;
-                    
-                }
-            }
-        }
-    }
-
-    .img-container {
-        position: absolute;
-        width: 30vw;
-        bottom: 10vh;
-        right: 10vw;
-        
-
-        .img{
-            
+        .text-container {
             width: 100%;
-            transition: all 0.2s ease-in-out;
-            filter: grayscale(1);
-            border-radius: 10px;
-            
+            margin: 0 auto;
+            color: white;
+            font-family: 'Oooh Baby', cursive;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
 
-            &:hover {
-                filter: grayscale(0);
-                transition: all 0.2s ease-in-out;
+            .title {
+                text-align: center;
+                font-size: 50px;
+            }
+
+            p{
+                text-align: center;
+                font-family: 'Libre Baskerville', serif;        
+                display: inline-block;
+                line-height: 2;
+                font-size: 18px;
             }
         }
 
+        .swiper-container{        
+            background: transparent;
+            display: flex;
+            min-height: 40vh;
+            margin: 40px 0 ;
+
+            .swiper-place {
+                width: 60vw;
+                min-height: 40vh;
+                background:  transparent;
+
+                .swiper-pagination-bullet-active-main {
+                    background: white;
+                    width: 1vw;
+                    height: 2vh;
+                }
+
+                .swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-prev {
+                    background-color: rgb(224, 224, 224);
+                    width: 1vw;
+                    height: 2vh;
+                }
+
+                .swiper-slide {    
+                    font-family: 'Libre Baskerville', serif;  
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    background-color: transparent;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    text-shadow: 1.5px 1.5px 1px black;
+
+                    .title{
+                        font-size: 22px;
+                        font-weight: 600;
+                        margin-top: 5px ;
+                    }
+
+                    .testimony-container {
+                        font-family: 'Libre Baskerville', serif;
+                        font-style: italic;
+                        letter-spacing: 1;
+                        text-align: center;
+                        width: 80%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
     }
+}
+@media (max-width: 768px){
+    .testimonios-page { 
+        height: 100%;
+        position: relative;
+        
+        .background-container{
+            height: inherit;
+            .background {    
+                position: absolute;
+                z-index: -100;
+                height: inherit;
+                object-fit: cover;
+            }
 
-
+        }
+            
+        
+        .elements-container{
+            position: relative;
+            .text-container {
+                .title{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+            .swiper-container{
+                margin: 0;
+                .swiper-place {
+                    width: 90%;
+                    .swiper-pagination-bullet-active-main {
+                        width: 15px;
+                        border-radius: 50%;
+                    }
+                    .swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-prev {
+                        width: 17px;
+                        border-radius: 50%;
+                    }
+                    .swiper-slide{
+                        width: 100%;
+                        font-size: 17px;
+                        
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

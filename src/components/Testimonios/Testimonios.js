@@ -16,7 +16,10 @@ const Testimonios = () => {
     
     return(
         <div className="testimonios-page">
+            <div className='background-container'>
                 <img className='background' src={background} alt='phone'/>
+            </div>
+            <div className='elements-container'>
                 <div className='text-container'>
                     <h1 className='title'>Ellos ya se animaron a cambiar sus habitos!</h1>
                     <p>Ahora es el momento de que vos tambien lo hagas!</p>
@@ -26,7 +29,7 @@ const Testimonios = () => {
                         pagination={{    
                             clickable: true,
                             dynamicBullets: true,
-                          }}
+                            }}
                         modules={[Pagination]}
                         className='swiper-place'
                     >   
@@ -34,7 +37,7 @@ const Testimonios = () => {
                             return(
                                 <SwiperSlide key={index} className='swiper-slide'>
                                         <p className='title'>{test.name}</p>
-                                       <p className='age'>{test.age}, {test.profession}</p>
+                                        <p className='age'>{test.place}</p>
                                         <div className='testimony-container'>
                                             <p>"{test.testimony}"</p>
                                         </div>
@@ -43,10 +46,7 @@ const Testimonios = () => {
                         })}
                     </Swiper>
                 </div>
-                <div className='img-container'>
-                    <img className='img' src={pic} alt={pic} />
-                </div>
-            {/* </div> */}
+            </div>
         </div>
     )
 }

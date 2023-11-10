@@ -10,6 +10,7 @@ const ContextProvider = ({children}) => {
     const [cartProducts, setCartProducts] = useState([])
     const [totalPrice, setTotalPrice] = useState(0)
     const [currCategory, setCurrCategory] = useState("")
+    const [mail, setMail] = useState(null)
 
     const addProducts = (product) => {
         let duplicado = cartProducts.find(cartProduct => cartProduct.productId === product.productId)
@@ -38,7 +39,8 @@ const ContextProvider = ({children}) => {
         cartProducts,
         totalPrice,
         setCurrCategory,
-        currCategory
+        setMail,
+        mail
     }
 
     return (

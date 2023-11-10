@@ -51,7 +51,7 @@
         bottom: 0;
         background-color: #d7e4e0;
         height: 5vh;
-        width: 100vw;
+        width: 100%;
         color: #40877c;
         display: flex;
         justify-content: space-between;
@@ -60,6 +60,28 @@
         p {
             font-family: 'Libre Baskerville', serif;     
             text-align: center;
+        }
+    }
+}
+@media (max-width: 768px){
+    .footer-page {   
+        height: 100%;
+        .footer-content {
+            hr {
+                display: none;
+            }
+            .links {
+                display: none;
+            }           
+            .final-column {
+                display: none;
+            }
+            .img-container {
+                margin: 10px 0;
+            }
+        }
+        .footer-last {
+            display: none;
         }
     }
 }

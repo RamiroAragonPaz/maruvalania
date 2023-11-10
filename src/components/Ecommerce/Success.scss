@@ -1,0 +1,19 @@
+.success-page{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    color: #d01b33;
+    font-family: 'Libre Baskerville', serif;  
+
+    .text-container{    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(600px + 50px);
+        width: 60%;
+        margin: 0 auto;
+        text-align: start;
+
+    }
+}

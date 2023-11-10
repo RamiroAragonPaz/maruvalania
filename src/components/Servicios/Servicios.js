@@ -19,11 +19,8 @@ const Servicios = () => {
     return(
         <div>
             <div className="servicios-page" id='Servicios'>
-                <div className='background-image'>
-                    <img src={rasberry} alt={rasberry} />
-                </div>
                 <div className="text-container">
-                    <h1 className='title'>Querés lograr tu gran cambio?</h1>
+                    <h1 className='title'>¿Querés lograr tu mejor version?</h1>
                     <p className='subtitle'>Busquemos la mejor opción para el momento y proceso en el que estas hoy</p>
                     <br />
                     <p className='subtitle'>Descubrí en cada imagen tu mejor alternativa</p>
@@ -50,7 +47,7 @@ const Servicios = () => {
                         <Link to={`/productList`} onClick={()=>sendCategory('consultas')} >
                             <img className='image-card' src={planes}  alt={planes}/>
                             <div className='text'>
-                                <p>Abordaje 1:1</p>
+                                <p>Abordaje On-line</p>
                             </div>
                         </Link>
                     </div>

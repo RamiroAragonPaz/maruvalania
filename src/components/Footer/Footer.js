@@ -39,7 +39,6 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-last'>
-
                 <p>&copy;2023 - Marianela Valania</p>
                 <p>Diseño y desarrollo Web: Ramiro Aragón Paz </p>
             </div>

@@ -1,17 +1,16 @@
 .DondeEncontrarme-page {
     min-height: 125vh;
     display: flex;
-    width: 100vw;
+    width: 100%;
     position: relative;    
     z-index: -100;
     
     
     .text-container{
-        height: 110vh;
+        min-height: 110vh;
         width: 90vw;
         margin: auto;
         text-align: center;
-        
         color: #40877c;
         font-family: 'Libre Baskerville', serif;  
         
@@ -25,7 +24,9 @@
         .parragraphs {
             display: flex;
             width: 100%;
-
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: center;
             .icon{
                 height: 5vh;
                 display: block;
@@ -34,17 +35,13 @@
             }
             
             .ph {
-                
-                width: 30vw;
-                margin: 0 2.5vw;
+                flex: 0 0 33.333333%;    
+                width: 15%;
+                margin: 0 2.5%;
                 text-align: justify;
 
                 h3{
                     min-height: 10vh;
-                }
-
-                .ph-list {
-                    margin: 5px 0;
                 }
             }
         }
@@ -56,4 +53,26 @@
             font-size: 17px
         }
     }
+}
+
+@media (max-width: 768px){
+    .DondeEncontrarme-page {
+        height: 100%;
+        .text-container{
+            .text-title{
+                font-size: 40px;
+            }
+            .parragraphs{
+                .ph{
+                    flex: 0 0 100%; 
+                    width: 100%;
+                    text-align: justify;
+                    h3{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+    }   
 }

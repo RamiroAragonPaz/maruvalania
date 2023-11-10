@@ -7,9 +7,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Navbar from './components/Navbar/Navbar';
 import ProductList from './components/Ecommerce/ProductList/ProductList';
-import ProductDetail from './components/Ecommerce/ProductDetail/ProductDetail';
-import Checkout from './components/Ecommerce/Checkout/Checkout';
-import Payment from './components/Ecommerce/Payment/Payment';
+import Success from './components/Ecommerce/Success';
+import ProductDetail from './components/Ecommerce/ProductList/ProductDetail';
+
+
 import { ContextProvider } from './Context/Context';
 
 
@@ -25,9 +26,8 @@ function App() {
             <Routes>
               <Route path='/' element={<Layout />}/>
               <Route path='/productlist' element={<ProductList />} />
-              <Route path='/productdetail/:category/:id' element={<ProductDetail />} />
-              <Route path='/checkout' element={<Checkout />} />
-              <Route path='/checkout/payment' element={<Payment />} />
+              <Route path='/productlist/productdetail' element={<ProductDetail />} />
+              <Route path='/success' element={<Success />} />
             </Routes>
             </ContextProvider>
         </BrowserRouter>

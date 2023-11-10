@@ -62,3 +62,37 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .div1 {   
+        overflow: unset;
+        width: 80%;
+        height: 100%;
+        
+        .content-container{
+            top: 0;
+            height: 100%;
+            .text-container{
+                display: none;
+            }           
+        
+            .button-container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 80%;
+                align-items: center;
+                a{
+                    width: 40%;
+                    
+                    .buy-button{
+                        width: 100%;
+                        height: 60%;    
+                        background-color: #d01b33;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

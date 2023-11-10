@@ -1,21 +1,18 @@
 
 [
     {
-        "name": "Daniel",
-        "age": 43,
-        "profession": "Arquitecto",
-        "testimony": "La mejor nutri de la ciudad!"
+        "name": "AGUSTINA",
+        "place": "La Plata, Buenos Aires, Argentina",
+        "testimony": "...recién ahora empecé a darme cuenta y valorar todo lo que aprendí y todos los cambios que llegué a hacer yendo al consultorio. Así que ahora, todos los días, intento no concentrarme solo en mi aspecto físico, sino, en lo que hice consciente durante el día para sentirme mejor conmigo misma. ¡Gracias! ¡Porque eso lo logré con vos! En el consultorio y escuchándote por acá"
     },
     {
-        "name": "Jorgelina",
-        "age": 23,
-        "profession": "Estudiante",
-        "testimony": "Gracias a Maru logre mis objetivos en 2 meses"
+        "name": "GIOVANA",
+        "place": "La Plata, Buenos Aires, Argentina",
+        "testimony": "Con respecto al plan y a vos! ¿Qué te puedo decir? Realmente es la primera vez que un tratamiento me funciona, que veo resultados, que me siento acompañada baje o no baje de peso. Sos mi pilar en este proceso, estas para cada duda o necesidad!! ¡Así que no tengo más que agradecerte! ¡Estoy súper enganchada y tengo muchas ganas de ir por más! ¡Y llevar esto a otro nivel realmente!"
     },
     {
-        "name": "Ramiro",
-        "age": 32,
-        "profession": "Contador",
-        "testimony": "Gracias a Maru pude bajar 2 kilos de grasa y subir 3 de musculo!"
+        "name": "JOSEFINA",
+        "place": "La Plata, Buenos Aires, Argentina",
+        "testimony": "con Maru logre empezar a disfrutar las consultas sin miedo a la balanza y entender que no solo se trata de bajar de peso, hacer dieta y comer sano, sino, que mayormente en mi caso, contribuyó a dejar de lado los pensamientos obsesivos respecto a la comida, poder establecer un orden, entender que no es necesario pasar hambre ni restringirse y más que nada, a no ser tan autoexigente y saber que, si las cosas no salen una vez, existe una próxima para mejorar, porque los cambios requieren tiempo"
     }
 ]

@@ -1,14 +1,20 @@
 import './Nav.scss'
 
 import { NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faCircle } from '@fortawesome/free-solid-svg-icons'
+
 import { useEffect, useContext, useState} from 'react';
 import { Context } from '../../../Context/Context';
 
 const Nav = () => {
 
-    const {selectedProduct,  addProducts, cartProducts} = useContext(Context)
+    const {selectedProduct,setCurrCategory,  addProducts, cartProducts} = useContext(Context)
+
+
+    const changeCategory = (e) => {
+        window.scrollTo(0, 650)
+        setCurrCategory(e.target.value)
+    }
+
 
     return(
         <div className='nav2-container'>
@@ -17,15 +23,15 @@ const Nav = () => {
                     <p>Maru Valania Store</p>
                 </NavLink>
             </div>
+            <div className='filters'>
+                <button className='btn' onClick={(e)=>changeCategory(e)} value="guias">E-BOOKS</button>
+                <button className='btn' onClick={(e)=>changeCategory(e)} value="planes" > PLANES</button>
+                <button className='btn' onClick={(e)=>changeCategory(e)} value="Combos" >COMBOS</button>
+                <button className='btn' onClick={(e)=>changeCategory(e)} value="" > TODOS</button>
+            </div>
             <nav className='links'>
                 <NavLink exact='true' activeclassname="active" to='/'>
                     <p>IR AL SITIO</p>
-                </NavLink>
-                 <NavLink exact='true' activeclassname="active" className='portfolio-link' to='/checkout'>
-                        <div className='cart'>
-                            <FontAwesomeIcon icon={faCartShopping} />
-                            <p className='cart-text'>{cartProducts.length}</p>
-                        </div>
                 </NavLink>
             </nav>
         </div>
